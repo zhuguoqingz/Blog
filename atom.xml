@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-17T06:56:42.680Z</updated>
+  <updated>2018-07-17T09:59:01.562Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,12 +21,23 @@
     <link href="http://yoursite.com/2018/07/17/hexo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2018/07/17/hexo构建个人博客/</id>
     <published>2018-07-17T06:56:42.000Z</published>
-    <updated>2018-07-17T06:56:42.680Z</updated>
+    <updated>2018-07-17T09:59:01.562Z</updated>
+    
+    <content type="html"><![CDATA[<p>首先介绍一下什么是hexo<br>hexo是一款博客框架,将支持的类型的文件转换成静态Web页面(html+css+js)<br>如何创建一个属于自己的博客呢<br>你需要下载并安装<br>    1.git<br>    2.node.js<br>    3.hexo<br>这里就不介绍git与node的安装方法了,没有的小伙伴请到官网下载<br>下面是有关hexo的安装<br>打开你的终端 操作如下命令<br>npm install hexo-cli -g<br>hexo init blog<br>cd blog<br>npm install<br>hexo server<br>这些都完成后你的电脑上应该就会出现一个命名为blog的文件<br>然后运行它使用命令hexo s<br>这时会提示你打开4000页面这样你的第一个博客就建好了<br>更多相关配置请参考hexo官方文档<br><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a></p>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;p&gt;首先介绍一下什么是hexo&lt;br&gt;hexo是一款博客框架,将支持的类型的文件转换成静态Web页面(html+css+js)&lt;br&gt;如何创建一个属于自己的博客呢&lt;br&gt;你需要下载并安装&lt;br&gt;    1.git&lt;br&gt;    2.node.js&lt;br&gt;    3.hexo&lt;b
+      
+    
     </summary>
     
+      <category term="博客传" scheme="http://yoursite.com/categories/%E5%8D%9A%E5%AE%A2%E4%BC%A0/"/>
+    
+    
+      <category term="-HEXO" scheme="http://yoursite.com/tags/HEXO/"/>
     
   </entry>
   
@@ -35,7 +46,7 @@
     <link href="http://yoursite.com/2018/07/16/%E4%BD%A0%E5%A5%BD/"/>
     <id>http://yoursite.com/2018/07/16/你好/</id>
     <published>2018-07-16T03:26:20.000Z</published>
-    <updated>2018-07-17T08:58:15.623Z</updated>
+    <updated>2018-07-17T09:11:04.674Z</updated>
     
     <content type="html"><![CDATA[<p>WEBGL驱动的音乐展示器<br><img src="/images/1.gif"><br>具体请参考 <a href="https://github.com/EYHN/Azusa" target="_blank" rel="noopener">https://github.com/EYHN/Azusa</a></p>]]></content>
     
@@ -48,10 +59,10 @@
     
     </summary>
     
-      <category term="电影评论" scheme="http://yoursite.com/categories/%E7%94%B5%E5%BD%B1%E8%AF%84%E8%AE%BA/"/>
+      <category term="关于前端" scheme="http://yoursite.com/categories/%E5%85%B3%E4%BA%8E%E5%89%8D%E7%AB%AF/"/>
     
     
-      <category term="-hello" scheme="http://yoursite.com/tags/hello/"/>
+      <category term="-HTML" scheme="http://yoursite.com/tags/HTML/"/>
     
   </entry>
   
