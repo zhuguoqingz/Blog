@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-16T07:47:00.981Z</updated>
+  <updated>2018-07-17T06:56:42.680Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,24 +17,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>hexo构建个人博客</title>
+    <link href="http://yoursite.com/2018/07/17/hexo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2018/07/17/hexo构建个人博客/</id>
+    <published>2018-07-17T06:56:42.000Z</published>
+    <updated>2018-07-17T06:56:42.680Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>点进来看看</title>
     <link href="http://yoursite.com/2018/07/16/%E4%BD%A0%E5%A5%BD/"/>
     <id>http://yoursite.com/2018/07/16/你好/</id>
     <published>2018-07-16T03:26:20.000Z</published>
-    <updated>2018-07-16T07:47:00.981Z</updated>
+    <updated>2018-07-17T08:58:15.623Z</updated>
     
-    <content type="html"><![CDATA[<p>你好 ~</p>]]></content>
+    <content type="html"><![CDATA[<p>WEBGL驱动的音乐展示器<br><img src="/images/1.gif"><br>具体请参考 <a href="https://github.com/EYHN/Azusa" target="_blank" rel="noopener">https://github.com/EYHN/Azusa</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;你好 ~&lt;/p&gt;
-
+        &lt;p&gt;WEBGL驱动的音乐展示器&lt;br&gt;&lt;img src=&quot;/images/1.gif&quot;&gt;&lt;br&gt;具体请参考 &lt;a href=&quot;https://github.com/EYHN/Azusa&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github
       
     
     </summary>
     
+      <category term="电影评论" scheme="http://yoursite.com/categories/%E7%94%B5%E5%BD%B1%E8%AF%84%E8%AE%BA/"/>
+    
+    
+      <category term="-hello" scheme="http://yoursite.com/tags/hello/"/>
     
   </entry>
   
