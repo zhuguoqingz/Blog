@@ -306,7 +306,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/16/你好/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/06/js基础/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="朱国庆">
@@ -325,8 +325,8 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/16/你好/" itemprop="url">
-                  点进来看看
+                <a class="post-title-link" href="/2018/08/06/js基础/" itemprop="url">
+                  js基础 复习
                 </a>
               
             
@@ -352,7 +352,7 @@
                 
               
 
-              <time title="Post created: 2018-07-16 11:26:20" itemprop="dateCreated datePublished" datetime="2018-07-16T11:26:20+08:00">2018-07-16</time>
+              <time title="Post created: 2018-08-06 10:02:49" itemprop="dateCreated datePublished" datetime="2018-08-06T10:02:49+08:00">2018-08-06</time>
             
 
             
@@ -369,7 +369,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2018-07-17 17:11:04" itemprop="dateModified" datetime="2018-07-17T17:11:04+08:00">2018-07-17</time>
+                <time title="Updated at: 2018-08-09 11:46:27" itemprop="dateModified" datetime="2018-08-09T11:46:27+08:00">2018-08-09</time>
               
             
           </span>
@@ -422,7 +422,537 @@
       
         
           
-            <p>WEBGL驱动的音乐展示器<br><img src="/images/1.gif"><br>具体请参考 <a href="https://github.com/EYHN/Azusa" target="_blank" rel="noopener">https://github.com/EYHN/Azusa</a></p>
+            <p>关于js的注释使用的是 //  这是一种单行注释方法  /<em> </em>/ 是多行注释的方法<br>数据类型  js一共有六种数据类型分别是</p>
+<h2 id="1-number"><a href="#1-number" class="headerlink" title="1.number"></a>1.number</h2><blockquote>
+<p>number类型包含了整数和浮点数,浮点数的值必须包含一个小数点,小数点的后面至少有一位小数<br>  NaN 非数字类型。特点是涉及到任何关于NaN的操作，都会返回NaN NaN不等于自身。<br>  isNaN() 函数用于检查其参数是否是非数字值<br>  isNaN(123) //false isNaN(‘hello’)  //true</p>
+</blockquote>
+<h2 id="2-String类型"><a href="#2-String类型" class="headerlink" title="2.String类型"></a>2.String类型</h2><blockquote>
+<p> 字符串有length属性<br>  字符串的转换:转换函数String();适用于任何数据类型(null,undefined 转换后为 null 和 undefined) toString()方法<br>  (null,defind没有toString()方法)</p>
+</blockquote>
+<h2 id="3-Boolean类型"><a href="#3-Boolean类型" class="headerlink" title="3.Boolean类型"></a>3.Boolean类型</h2><p>  该类型只有两个值 true 和 false</p>
+<h2 id="4-Undefined类型"><a href="#4-Undefined类型" class="headerlink" title="4.Undefined类型"></a>4.Undefined类型</h2><blockquote>
+<p>该类型只有一个值即undefined值 使用var声明了变量,但没有给变量初始化值那么这个变量的值就是undefined。</p>
+</blockquote>
+<h2 id="5-Null"><a href="#5-Null" class="headerlink" title="5.Null"></a>5.Null</h2><p>null类型被看做空对象指针,前文说到null类型也是空的对象引用。</p>
+<h2 id="6-Object类型"><a href="#6-Object类型" class="headerlink" title="6.Object类型"></a>6.Object类型</h2><blockquote>
+<p> js中对象是一组属性与方法的集合，这里就要说到引用类型了，引用类型是一种数据结构用于将数据和功能组织在一起。引用数据类型<br>  有时候被称为对象定义，因为它们描述的是一类对象所具有的属性和方法。</p>
+</blockquote>
+<h1 id="三大引用类型"><a href="#三大引用类型" class="headerlink" title="三大引用类型"></a>三大引用类型</h1><h2 id="1-Object类型"><a href="#1-Object类型" class="headerlink" title="1.Object类型"></a>1.Object类型</h2><p>  我们看到的大多数类型都是Object构造函数，如下所示<br>  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> person = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line">person.name = <span class="string">"Micheal"</span>;</span><br><span class="line">person.age = <span class="number">24</span>;</span><br></pre></td></tr></table></figure></p>
+<p>  第二种方式是使用对象字面量表示方法，如下所示<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> person = &#123;</span><br><span class="line">　　name : <span class="string">"Micheal"</span>,</span><br><span class="line">　　age : <span class="number">24</span></span><br><span class="line"> &#125;;</span><br></pre></td></tr></table></figure></p>
+<h2 id="2-Array类型"><a href="#2-Array类型" class="headerlink" title="2.Array类型"></a>2.Array类型</h2><blockquote>
+<p>数组的每一项可以用来保存任何类型的数据，也就说，可以用数组的第一个位置来保存字符串，第二个位置保存数值，<br>第三个位置保存对象…另外，数组的大小是可以动态调整的<br>创建数组的基本方式有两种<br>第一种是使用Array构造函数 如下所示 </p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> colors = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">"red"</span>,<span class="string">"yellow"</span>,<span class="string">"blue"</span>)</span><br></pre></td></tr></table></figure>
+<p>第二种是使用数组字面量表示方法,如下所示<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> colors = [<span class="string">"red"</span>,<span class="string">"blue"</span>,<span class="string">"yellow"</span>];</span><br></pre></td></tr></table></figure></p>
+<h2 id="3-Function类型"><a href="#3-Function类型" class="headerlink" title="3.Function类型"></a>3.Function类型</h2><p>每个函数都是Function类型Function类型的实例,而且都与其他的引用类型方法一样具有属性和方法。函数通常是使用函数声明语法定义的，如下所示<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">num1,num2</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这和使用函数表达定义函数的方式相差无几<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> sun  = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> sum1 + sum2</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>也就是说，js按照存储方式分为值类型和引用类型。那么他们的计算有什么区别呢？</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">题目<span class="number">1</span>： <span class="keyword">var</span> a = <span class="number">100</span>;</span><br><span class="line">　　　　<span class="keyword">var</span> b = a;</span><br><span class="line">　　　  a = <span class="number">200</span>;</span><br><span class="line">　　　　<span class="built_in">console</span>.log (b);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">题目<span class="number">2</span>： <span class="keyword">var</span> a = &#123;<span class="attr">age</span> : <span class="number">20</span>&#125;;</span><br><span class="line">　　　　<span class="keyword">var</span> b = a;</span><br><span class="line">　　　　b.age = <span class="number">21</span>;</span><br><span class="line">　　　　<span class="built_in">console</span>.log (a.age);</span><br></pre></td></tr></table></figure>
+<h3 id="题目1的答案是-100，题目2的答案是21，"><a href="#题目1的答案是-100，题目2的答案是21，" class="headerlink" title="题目1的答案是 100，题目2的答案是21，"></a>题目1的答案是 100，题目2的答案是21，</h3><blockquote>
+<p>题目1是简单的值类型，在从一个变量向另一个变量赋值基本类型时，会在该变量上创建一个新值，然后再把该值复制到为新变量分配的位置上。<br>此时，a中保存的值为 100 ，当使用 a 来初始化 b 时，b 中保存的值也为100，但b中的100与a中的是完全独立的，该值只是a中的值的一个副本，此后，<br>这两个变量可以参加任何操作而相互不受影响。也就是说基本类型在赋值操作后，两个变量是相互不受影响的。</p>
+<p>题目2是引用类型，当从一个变量向另一个变量赋值引用类型的值时，同样也会将存储在变量中的对象的值复制一份放到为新变量分配的空间中。<br>这时保存在变量中的是对象在堆内存中的地址，所以，与简单赋值不同，这个值的副本实际上是一个指针，而这个指针指向存储在堆内存的一个对象。那么赋值操作后，<br>两个变量都保存了同一个对象地址，则这两个变量指向了同一个对象。因此，改变其中任何一个变量，都会相互影响。<br>因此，引用类型的赋值其实是对象保存在栈区地址指针的赋值，因此两个变量指向同一个对象，任何的操作都会相互影响。</p>
+</blockquote>
+<h3 id="null-和-undefined-的区别-null是空-undefined是什么都没有"><a href="#null-和-undefined-的区别-null是空-undefined是什么都没有" class="headerlink" title="null 和 undefined 的区别  null是空 undefined是什么都没有"></a>null 和 undefined 的区别  null是空 undefined是什么都没有</h3><h2 id="逻辑操作符"><a href="#逻辑操作符" class="headerlink" title="逻辑操作符"></a>逻辑操作符</h2><blockquote>
+<p>这里使用逻辑与 &amp;  逻辑操作符的对象是布尔值，每个逻辑操作数会返回一个true 或 false<br>  逻辑与只有在两个操作都是true的时候才会是true<br>  逻辑或 操作符是 || 只要他的操作数种有一个true 逻辑或操作就将是true 如果两个是true 逻辑或也将是true 只用两个都是fales才会是false<br>  js还提供了一个逻辑非操作符 他是由一个感叹号单结构组成的 ! 逻辑非 操作符只能作用于单个逻辑操作数，其结果是把一个逻辑操作符的布尔值 取反 如果布尔值是 true 那么就取他的反为false<br>  js操作DOM的方法<br>  getAttribute 这个属性返回指定的属性名字 比如 target=”_blank”  getAttribute(“target”) 则返回target<br>  createElement 创建元素节点 比如 document.createElement(“li”) 创建了一个li元素<br>  appendChild   方法在指定元素节点的最后一个子节点添加节点<br>  insertBefore  方法可在已有的子节点前插入一个新的子节点<br>  setAttribute  方法添加指定的属性，并为其赋指定的值   </p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/10/CSS性能优化/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="朱国庆">
+      <meta itemprop="description" content="Do not, for one repulse, forgot the purpose that you resolved to effort. ">
+      <meta itemprop="image" content="/images/001.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="web">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/10/CSS性能优化/" itemprop="url">
+                  CSS性能优化
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2018-08-10 14:33:14 / Updated at: 15:35:50" itemprop="dateCreated datePublished" datetime="2018-08-10T14:33:14+08:00">2018-08-10</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/关于前端/" itemprop="url" rel="index"><span itemprop="name">关于前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="内联首屏关键CSS"><a href="#内联首屏关键CSS" class="headerlink" title="内联首屏关键CSS"></a>内联首屏关键CSS</h2><p>大家都习惯于link标签引用外部CSS文件，将CSS直接内敛到HTML文档中能使CSS更快速地下载，而外部CSS文件时,<br>需要在HTML文档下载完成后才知道所要引用的CSS文件，然后才下载它们。所以,<strong>内联CSS能够使浏览器开始页面渲染的时间提前</strong>因为在HTML下载完成之后就能渲染了。<br>这种方式并不适用于内联较大的CSS文件。因为初始拥塞窗口3存在限制（TCP相关概念，通常是 14.6kB，压缩后大小），如果内联CSS后的文件超出了这一限制，系统就需要在服务器和浏览器之间进行更多次的往返，这样并不能提前页面渲染时间。<strong>只将渲染首屏内容所需的关键CSS内联到HTML中。</strong></p>
+<h2 id="异步加载CSS"><a href="#异步加载CSS" class="headerlink" title="异步加载CSS"></a>异步加载CSS</h2><pre><code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//创建link标签</span></span><br><span class="line"><span class="keyword">let</span> MyCss = <span class="built_in">document</span>.createElement( <span class="string">"link"</span> );</span><br><span class="line">MyCss.rel = <span class="string">'stylesheet'</span>;</span><br><span class="line">MyCss.href = <span class="string">'Mystyle.css'</span>;</span><br><span class="line"><span class="comment">//插入到header的最后位置</span></span><br><span class="line"><span class="built_in">document</span>.head.insertBefore( MyCss, <span class="built_in">document</span>.head.childNodes[ <span class="built_in">document</span>.head.childNodes.length - <span class="number">1</span> ].nextSibling );</span><br></pre></td></tr></table></figure>
+</code></pre><h3 id="减少使用昂贵的属性"><a href="#减少使用昂贵的属性" class="headerlink" title="减少使用昂贵的属性"></a>减少使用昂贵的属性</h3><p>在浏览器绘制屏幕时，所有需要浏览器进行操作或计算的属性相对而言都需要花费更大的代价。当页面发生重绘时，它们会降低浏览器的渲染性能。所以在编写CSS时，我们应该尽量减少使用昂贵属性，<strong>如box-shadow/border-radius/filter/透明度/:nth-child等。</strong><br>可以优先选择没有昂贵属性或昂贵属性更少的方案，如果每次都这样的选择，网站的性能会在不知不觉中得到一定的提升。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/07/VUE的学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="朱国庆">
+      <meta itemprop="description" content="Do not, for one repulse, forgot the purpose that you resolved to effort. ">
+      <meta itemprop="image" content="/images/001.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="web">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/07/VUE的学习/" itemprop="url">
+                  VUE的学习
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2018-08-07 18:34:21" itemprop="dateCreated datePublished" datetime="2018-08-07T18:34:21+08:00">2018-08-07</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-08-09 09:36:57" itemprop="dateModified" datetime="2018-08-09T09:36:57+08:00">2018-08-09</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/关于前端/" itemprop="url" rel="index"><span itemprop="name">关于前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>面向对象和数组 {} []<br>pop push unshift shift slice splice reverse sotr indeOf lastIndexof concat<br>能改变原色的方法 pop push unshift shift splice reverse sort  vue中起名数组的变异<br>forEach 循环特点没有:返回值</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/19/Css样式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="朱国庆">
+      <meta itemprop="description" content="Do not, for one repulse, forgot the purpose that you resolved to effort. ">
+      <meta itemprop="image" content="/images/001.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="web">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/19/Css样式/" itemprop="url">
+                  Css样式
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2018-07-19 10:28:49" itemprop="dateCreated datePublished" datetime="2018-07-19T10:28:49+08:00">2018-07-19</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-08-10 14:36:28" itemprop="dateModified" datetime="2018-08-10T14:36:28+08:00">2018-08-10</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/关于前端/" itemprop="url" rel="index"><span itemprop="name">关于前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>关于 input的点击时去掉表框颜色<br>属性:outline: none;<br>添加字符使用属性:placeholder </p>
 
           
         
@@ -521,12 +1051,24 @@
                 
               
 
-              <time title="Post created: 2018-07-17 14:56:42 / Updated at: 17:59:01" itemprop="dateCreated datePublished" datetime="2018-07-17T14:56:42+08:00">2018-07-17</time>
+              <time title="Post created: 2018-07-17 14:56:42" itemprop="dateCreated datePublished" datetime="2018-07-17T14:56:42+08:00">2018-07-17</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-08-10 15:23:22" itemprop="dateModified" datetime="2018-08-10T15:23:22+08:00">2018-08-10</time>
               
             
           </span>
@@ -579,7 +1121,7 @@
       
         
           
-            <p>首先介绍一下什么是hexo<br>hexo是一款博客框架,将支持的类型的文件转换成静态Web页面(html+css+js)<br>如何创建一个属于自己的博客呢<br>你需要下载并安装<br>    1.git<br>    2.node.js<br>    3.hexo<br>这里就不介绍git与node的安装方法了,没有的小伙伴请到官网下载<br>下面是有关hexo的安装<br>打开你的终端 操作如下命令<br>npm install hexo-cli -g<br>hexo init blog<br>cd blog<br>npm install<br>hexo server<br>这些都完成后你的电脑上应该就会出现一个命名为blog的文件<br>然后运行它使用命令hexo s<br>这时会提示你打开4000页面这样你的第一个博客就建好了<br>更多相关配置请参考hexo官方文档<br><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a></p>
+            <p>首先介绍一下什么是hexo<br>hexo是一款博客框架,将支持的类型的文件转换成静态Web页面(html+css+js)<br>如何创建一个属于自己的博客呢<br>你需要下载并安装<br>    1.git<br>    2.node.js<br>    3.hexo<br>下面是有关hexo的安装<br>打开你的终端 操作如下命令<br>npm install hexo-cli -g<br>hexo init blog<br>cd blog<br>npm install<br>hexo server<br>这些都完成后你的电脑上应该就会出现一个命名为blog的文件<br>然后运行它使用命令hexo s<br>这时会提示你打开4000页面这样你的第一个博客就建好了<br>更多相关配置请参考hexo官方文档<br><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a></p>
 
           
         
@@ -664,7 +1206,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
@@ -698,7 +1240,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">Tags</span>
                   </a>
                 </div>
@@ -742,6 +1290,10 @@
                 推荐阅读
               </div>
               <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://wang.icey.cc/" title="冰洋大佬博客" target="_blank">冰洋大佬博客</a>
+                  </li>
                 
                   <li class="links-of-blogroll-item">
                     <a href="https://www.gulpjs.com.cn/" title="gulp自动化构建" target="_blank">gulp自动化构建</a>
