@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="web">
 <meta property="og:description" content="关于js的注释使用的是 //  这是一种单行注释方法  / / 是多行注释的方法数据类型  js一共有六种数据类型分别是 1.number number类型包含了整数和浮点数,浮点数的值必须包含一个小数点,小数点的后面至少有一位小数  NaN 非数字类型。特点是涉及到任何关于NaN的操作，都会返回NaN NaN不等于自身。  isNaN() 函数用于检查其参数是否是非数字值  isNaN(123)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-09T03:46:27.573Z">
+<meta property="og:updated_time" content="2018-08-17T07:14:12.421Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js基础 复习">
 <meta name="twitter:description" content="关于js的注释使用的是 //  这是一种单行注释方法  / / 是多行注释的方法数据类型  js一共有六种数据类型分别是 1.number number类型包含了整数和浮点数,浮点数的值必须包含一个小数点,小数点的后面至少有一位小数  NaN 非数字类型。特点是涉及到任何关于NaN的操作，都会返回NaN NaN不等于自身。  isNaN() 函数用于检查其参数是否是非数字值  isNaN(123)">
@@ -342,14 +342,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
 
               
                 
               
 
-              <time title="Post created: 2018-08-06 10:02:49" itemprop="dateCreated datePublished" datetime="2018-08-06T10:02:49+08:00">2018-08-06</time>
+              <time title="Created: 2018-08-06 10:02:49" itemprop="dateCreated datePublished" datetime="2018-08-06T10:02:49+08:00">2018-08-06</time>
             
 
             
@@ -366,7 +366,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2018-08-09 11:46:27" itemprop="dateModified" datetime="2018-08-09T11:46:27+08:00">2018-08-09</time>
+                <time title="Modified: 2018-08-17 15:14:12" itemprop="dateModified" datetime="2018-08-17T15:14:12+08:00">2018-08-17</time>
               
             
           </span>
@@ -380,7 +380,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">in</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/关于前端/" itemprop="url" rel="index"><span itemprop="name">关于前端</span></a></span>
@@ -451,7 +451,14 @@
 <h3 id="null-和-undefined-的区别-null是空-undefined是什么都没有"><a href="#null-和-undefined-的区别-null是空-undefined是什么都没有" class="headerlink" title="null 和 undefined 的区别  null是空 undefined是什么都没有"></a>null 和 undefined 的区别  null是空 undefined是什么都没有</h3><h2 id="逻辑操作符"><a href="#逻辑操作符" class="headerlink" title="逻辑操作符"></a>逻辑操作符</h2><blockquote>
 <p>这里使用逻辑与 &amp;  逻辑操作符的对象是布尔值，每个逻辑操作数会返回一个true 或 false<br>  逻辑与只有在两个操作都是true的时候才会是true<br>  逻辑或 操作符是 || 只要他的操作数种有一个true 逻辑或操作就将是true 如果两个是true 逻辑或也将是true 只用两个都是fales才会是false<br>  js还提供了一个逻辑非操作符 他是由一个感叹号单结构组成的 ! 逻辑非 操作符只能作用于单个逻辑操作数，其结果是把一个逻辑操作符的布尔值 取反 如果布尔值是 true 那么就取他的反为false<br>  js操作DOM的方法<br>  getAttribute 这个属性返回指定的属性名字 比如 target=”_blank”  getAttribute(“target”) 则返回target<br>  createElement 创建元素节点 比如 document.createElement(“li”) 创建了一个li元素<br>  appendChild   方法在指定元素节点的最后一个子节点添加节点<br>  insertBefore  方法可在已有的子节点前插入一个新的子节点<br>  setAttribute  方法添加指定的属性，并为其赋指定的值   </p>
 </blockquote>
-
+<h3 id="递增和递减"><a href="#递增和递减" class="headerlink" title="递增和递减(++- -)"></a>递增和递减(++- -)</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num1 = <span class="number">2</span> ;</span><br><span class="line"><span class="keyword">var</span> nun2 = <span class="number">20</span>;</span><br><span class="line"><span class="keyword">var</span> num3 = --num1+num2;   <span class="comment">//等于21</span></span><br><span class="line"><span class="keyword">var</span> num4 = num1 + num2;  <span class="comment">//等于21</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>在这里num3之所以等于21是因为先减去了1在计算<br>  num4等于20是因为上一个基础计算上 num1 减去了1 赋值给了全局变量num1 num4在计算的时候就是1+20=21<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num1 = <span class="number">2</span> ;</span><br><span class="line"><span class="keyword">var</span> nun2 = <span class="number">20</span>;</span><br><span class="line"><span class="keyword">var</span> num3 = num1--+num2;   <span class="comment">//等于22</span></span><br><span class="line"><span class="keyword">var</span> num4 = num1 + num2;  <span class="comment">//等于21</span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>可以看到将前置递减改成后置递减发生了变化,之前num3和num4都是等于21的现在num3等于22,这里是因为在计算num3的时候使用的是num1的原始值进行计算的;而num4之所以等于21是因为在计算后num3减1赋值给了num1所以num4等于21</p>
+</blockquote>
+<h3 id="如果是字符串先转换成数字值-在执行加减-字符串变量变成数值变量"><a href="#如果是字符串先转换成数字值-在执行加减-字符串变量变成数值变量" class="headerlink" title="如果是字符串先转换成数字值 在执行加减 字符串变量变成数值变量"></a>如果是字符串先转换成数字值 在执行加减 字符串变量变成数值变量</h3><h3 id="在布尔值计算的时候-布尔值是false的时候-先转换为0在执行加减1的操作-布尔值的变量变成数值的变量"><a href="#在布尔值计算的时候-布尔值是false的时候-先转换为0在执行加减1的操作-布尔值的变量变成数值的变量" class="headerlink" title="在布尔值计算的时候 布尔值是false的时候 先转换为0在执行加减1的操作 布尔值的变量变成数值的变量"></a>在布尔值计算的时候 布尔值是false的时候 先转换为0在执行加减1的操作 布尔值的变量变成数值的变量</h3><h3 id="布尔值是-true的时候-先转换成1在执行加减法的操作-布尔值变成数值的变量"><a href="#布尔值是-true的时候-先转换成1在执行加减法的操作-布尔值变成数值的变量" class="headerlink" title="布尔值是 true的时候 先转换成1在执行加减法的操作 布尔值变成数值的变量"></a>布尔值是 true的时候 先转换成1在执行加减法的操作 布尔值变成数值的变量</h3><h3 id="在浮点数的时候-执行加减1的操作"><a href="#在浮点数的时候-执行加减1的操作" class="headerlink" title="在浮点数的时候 执行加减1的操作"></a>在浮点数的时候 执行加减1的操作</h3><h3 id="同于对象的时，先调用对象的valueOf-方法取得一个可操作的值-如果结果是NaN则调用toSring-方法-对象变量变成数值变量"><a href="#同于对象的时，先调用对象的valueOf-方法取得一个可操作的值-如果结果是NaN则调用toSring-方法-对象变量变成数值变量" class="headerlink" title="同于对象的时，先调用对象的valueOf()方法取得一个可操作的值 如果结果是NaN则调用toSring()方法 对象变量变成数值变量"></a>同于对象的时，先调用对象的valueOf()方法取得一个可操作的值 如果结果是NaN则调用toSring()方法 对象变量变成数值变量</h3>
       
     </div>
 
@@ -575,10 +582,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Inhaltsverzeichnis
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Übersicht
+            Overview
           </li>
         </ul>
       
@@ -602,8 +609,8 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">5</span>
-                    <span class="site-state-item-name">Artikel</span>
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
@@ -620,7 +627,7 @@
                       
                     
                     <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">Kategorien</span>
+                    <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
               
@@ -642,8 +649,10 @@
                     
                       
                     
-                    <span class="site-state-item-count">5</span>
-                    <span class="site-state-item-name">Tags</span>
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
               
@@ -733,7 +742,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-number"><span class="nav-number">1.</span> <span class="nav-text">1.number</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-String类型"><span class="nav-number">2.</span> <span class="nav-text">2.String类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Boolean类型"><span class="nav-number">3.</span> <span class="nav-text">3.Boolean类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Undefined类型"><span class="nav-number">4.</span> <span class="nav-text">4.Undefined类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-Null"><span class="nav-number">5.</span> <span class="nav-text">5.Null</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-Object类型"><span class="nav-number">6.</span> <span class="nav-text">6.Object类型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三大引用类型"><span class="nav-number"></span> <span class="nav-text">三大引用类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Object类型"><span class="nav-number">1.</span> <span class="nav-text">1.Object类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Array类型"><span class="nav-number">2.</span> <span class="nav-text">2.Array类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Function类型"><span class="nav-number">3.</span> <span class="nav-text">3.Function类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目1的答案是-100，题目2的答案是21，"><span class="nav-number">3.1.</span> <span class="nav-text">题目1的答案是 100，题目2的答案是21，</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null-和-undefined-的区别-null是空-undefined是什么都没有"><span class="nav-number">3.2.</span> <span class="nav-text">null 和 undefined 的区别  null是空 undefined是什么都没有</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逻辑操作符"><span class="nav-number">4.</span> <span class="nav-text">逻辑操作符</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-number"><span class="nav-number">1.</span> <span class="nav-text">1.number</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-String类型"><span class="nav-number">2.</span> <span class="nav-text">2.String类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Boolean类型"><span class="nav-number">3.</span> <span class="nav-text">3.Boolean类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Undefined类型"><span class="nav-number">4.</span> <span class="nav-text">4.Undefined类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-Null"><span class="nav-number">5.</span> <span class="nav-text">5.Null</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-Object类型"><span class="nav-number">6.</span> <span class="nav-text">6.Object类型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三大引用类型"><span class="nav-number"></span> <span class="nav-text">三大引用类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Object类型"><span class="nav-number">1.</span> <span class="nav-text">1.Object类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Array类型"><span class="nav-number">2.</span> <span class="nav-text">2.Array类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Function类型"><span class="nav-number">3.</span> <span class="nav-text">3.Function类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目1的答案是-100，题目2的答案是21，"><span class="nav-number">3.1.</span> <span class="nav-text">题目1的答案是 100，题目2的答案是21，</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null-和-undefined-的区别-null是空-undefined是什么都没有"><span class="nav-number">3.2.</span> <span class="nav-text">null 和 undefined 的区别  null是空 undefined是什么都没有</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逻辑操作符"><span class="nav-number">4.</span> <span class="nav-text">逻辑操作符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#递增和递减"><span class="nav-number">4.1.</span> <span class="nav-text">递增和递减(++- -)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如果是字符串先转换成数字值-在执行加减-字符串变量变成数值变量"><span class="nav-number">4.2.</span> <span class="nav-text">如果是字符串先转换成数字值 在执行加减 字符串变量变成数值变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在布尔值计算的时候-布尔值是false的时候-先转换为0在执行加减1的操作-布尔值的变量变成数值的变量"><span class="nav-number">4.3.</span> <span class="nav-text">在布尔值计算的时候 布尔值是false的时候 先转换为0在执行加减1的操作 布尔值的变量变成数值的变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#布尔值是-true的时候-先转换成1在执行加减法的操作-布尔值变成数值的变量"><span class="nav-number">4.4.</span> <span class="nav-text">布尔值是 true的时候 先转换成1在执行加减法的操作 布尔值变成数值的变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在浮点数的时候-执行加减1的操作"><span class="nav-number">4.5.</span> <span class="nav-text">在浮点数的时候 执行加减1的操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#同于对象的时，先调用对象的valueOf-方法取得一个可操作的值-如果结果是NaN则调用toSring-方法-对象变量变成数值变量"><span class="nav-number">4.6.</span> <span class="nav-text">同于对象的时，先调用对象的valueOf()方法取得一个可操作的值 如果结果是NaN则调用toSring()方法 对象变量变成数值变量</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -767,7 +776,7 @@
 
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
 
 
 
