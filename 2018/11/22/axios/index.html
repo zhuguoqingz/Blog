@@ -108,18 +108,18 @@
 
 
 
-  <meta name="description" content="面向对象和数组 {} []pop push unshift shift slice splice reverse sotr indeOf lastIndexof concat能改变原色的方法 pop push unshift shift splice reverse sort  vue中起名数组的变异forEach 循环特点没有:返回值 结构1234567891011121314151617181">
+  <meta name="description" content="1、安装axios 先安装npm install axios然后！npm install –save axios vue-axios配置模板！新建api文件–&amp;gt;建一个api.js文件1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575">
 <meta name="keywords" content="-vue">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VUE的学习">
-<meta property="og:url" content="http://yoursite.com/2018/08/07/VUE的学习/index.html">
+<meta property="og:title" content="axios的封装">
+<meta property="og:url" content="http://yoursite.com/2018/11/22/axios/index.html">
 <meta property="og:site_name" content="web">
-<meta property="og:description" content="面向对象和数组 {} []pop push unshift shift slice splice reverse sotr indeOf lastIndexof concat能改变原色的方法 pop push unshift shift splice reverse sort  vue中起名数组的变异forEach 循环特点没有:返回值 结构1234567891011121314151617181">
+<meta property="og:description" content="1、安装axios 先安装npm install axios然后！npm install –save axios vue-axios配置模板！新建api文件–&amp;gt;建一个api.js文件1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-22T10:03:20.852Z">
+<meta property="og:updated_time" content="2018-11-22T10:20:35.229Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="VUE的学习">
-<meta name="twitter:description" content="面向对象和数组 {} []pop push unshift shift slice splice reverse sotr indeOf lastIndexof concat能改变原色的方法 pop push unshift shift splice reverse sort  vue中起名数组的变异forEach 循环特点没有:返回值 结构1234567891011121314151617181">
+<meta name="twitter:title" content="axios的封装">
+<meta name="twitter:description" content="1、安装axios 先安装npm install axios然后！npm install –save axios vue-axios配置模板！新建api文件–&amp;gt;建一个api.js文件1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575">
 
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/07/VUE的学习/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/11/22/axios/"/>
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>VUE的学习 | web</title>
+  <title>axios的封装 | web</title>
   
 
 
@@ -307,7 +307,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/07/VUE的学习/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/22/axios/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="朱国庆">
@@ -324,7 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">VUE的学习
+          <h1 class="post-title" itemprop="name headline">axios的封装
               
             
           </h1>
@@ -349,24 +349,12 @@
                 
               
 
-              <time title="Post created: 2018-08-07 18:34:21" itemprop="dateCreated datePublished" datetime="2018-08-07T18:34:21+08:00">2018-08-07</time>
+              <time title="Post created: 2018-11-22 18:04:33 / Updated at: 18:20:35" itemprop="dateCreated datePublished" datetime="2018-11-22T18:04:33+08:00">2018-11-22</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Updated at: 2018-11-22 18:03:20" itemprop="dateModified" datetime="2018-11-22T18:03:20+08:00">2018-11-22</time>
               
             
           </span>
@@ -417,19 +405,9 @@
       
 
       
-        <p>面向对象和数组 {} []<br>pop push unshift shift slice splice reverse sotr indeOf lastIndexof concat<br>能改变原色的方法 pop push unshift shift splice reverse sort  vue中起名数组的变异<br>forEach 循环特点没有:返回值</p>
-<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt; </span><br><span class="line">&lt;div&gt;</span><br><span class="line">      &lt;p <span class="class"><span class="keyword">class</span></span>=<span class="string">"welcome"</span>&gt;&#123;&#123;msg&#125;&#125;&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">      &lt;input type="text" v-model="val"&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="regexp">/template&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;                 </span></span><br><span class="line"><span class="regexp">    export default &#123;</span></span><br><span class="line"><span class="regexp">        name:'test',</span></span><br><span class="line"><span class="regexp">        data() &#123;</span></span><br><span class="line"><span class="regexp">            return &#123;</span></span><br><span class="line"><span class="regexp">                msg:'nihao',</span></span><br><span class="line"><span class="regexp">                fullName:'zhangsan',</span></span><br><span class="line"><span class="regexp">                val:'',</span></span><br><span class="line"><span class="regexp">            &#125; </span></span><br><span class="line"><span class="regexp">        &#125;,  </span></span><br><span class="line"><span class="regexp">        filter: &#123;&#125;,   </span></span><br><span class="line"><span class="regexp">        watch:&#123; </span></span><br><span class="line"><span class="regexp">            val(newval,oldval)&#123;</span></span><br><span class="line"><span class="regexp">                console.log(newval)</span></span><br><span class="line"><span class="regexp">                console.log(oldval)</span></span><br><span class="line"><span class="regexp">            &#125;</span></span><br><span class="line"><span class="regexp">        &#125;,</span></span><br><span class="line"><span class="regexp">        methods: &#123;&#125;,</span></span><br><span class="line"><span class="regexp">        computed: &#123;&#125;,  /</span><span class="regexp">/计算</span></span><br><span class="line"><span class="regexp">        components: &#123;&#125; /</span><span class="regexp">/导入组件</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h3><blockquote>
-<p><strong>v-if</strong>  判断是否加载固定内容 true就加载false则不加载<br>  语法: v-if(a==0)  判断表达式<br>  特点: 控制元素插入或删除，而不是隐藏（v-show是隐藏）<br>  v-if和v-for的区别 当一起使用时，v-for 具有比 v-if 更高的优先级。<br>  v-if的安全级别更高，v-show只是隐藏了，通过页面 <strong>源代码</strong> 还是可以看到，安全级别低<br>  <strong>v-else</strong> 紧跟在v-if后面，表示v-if条件不成立时执行<br>  <strong>v-else-if</strong> 表示多次在v-if 和 v-else之间<br>  <strong>v-show</strong> 表示显示隐藏<br>  <strong>v-on:click</strong> 简写:@click<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;p @click=<span class="string">" func(2)"</span>&gt;dianw&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">  methods: &#123;</span></span><br><span class="line"><span class="regexp">            func:function(a)&#123;</span></span><br><span class="line"><span class="regexp">                alert(a);</span></span><br><span class="line"><span class="regexp">            &#125;</span></span><br><span class="line"><span class="regexp">        &#125;,</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br></pre></td></tr></table></figure></p>
+        <h2 id="1、安装axios"><a href="#1、安装axios" class="headerlink" title="1、安装axios"></a>1、安装axios</h2><blockquote>
+<p>先安装<br>npm install axios<br>然后！<br>npm install –save axios vue-axios<br>配置模板！<br>新建api文件–&gt;建一个api.js文件<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> _axios <span class="keyword">from</span> <span class="string">'axios'</span> </span><br><span class="line"><span class="keyword">import</span> qs <span class="keyword">from</span> <span class="string">'qs'</span></span><br><span class="line"><span class="comment">// 新建一个请求头</span></span><br><span class="line"><span class="keyword">const</span> Header = <span class="string">"http://guanjia.uzhuang.com/index.php?r="</span>;</span><br><span class="line"><span class="comment">//获取token</span></span><br><span class="line"><span class="keyword">const</span> axios = _axios.create(&#123;</span><br><span class="line">    headers: &#123;</span><br><span class="line">        <span class="string">'Content-Type'</span>: <span class="string">'application/x-www-form-urlencoded'</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    transformRequest: <span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123;</span><br><span class="line">        <span class="comment">//依自己的需求对请求数据进行处理</span></span><br><span class="line">        <span class="keyword">if</span> (data) &#123;</span><br><span class="line">            data = qs.stringify(data);</span><br><span class="line">            <span class="keyword">return</span> data;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> data;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">axios.interceptors.request.use(<span class="function"><span class="keyword">function</span>(<span class="params">config</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 获取当前是否存在token</span></span><br><span class="line">    <span class="comment">// config.withCredentials = true // 允许携带token ,这个是解决跨域产生的相关问题</span></span><br><span class="line">    <span class="keyword">let</span> token = getCookie(<span class="string">'bId_token_key'</span>)</span><br><span class="line">    <span class="keyword">if</span> (token) &#123;</span><br><span class="line">        <span class="comment">// Authorization 请求头的键是前后台约定</span></span><br><span class="line">        config.headers[<span class="string">'tokenkey'</span>] = token</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> config</span><br><span class="line">&#125;, <span class="function"><span class="keyword">function</span>(<span class="params">error</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">Promise</span>.reject(error)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//写后台路径</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Method = &#123;</span><br><span class="line">        getOneRecord: <span class="string">'order/get-order-list'</span>, <span class="comment">// 全部订单</span></span><br><span class="line">        getTaocanRecord: <span class="string">'order/get-package'</span>, <span class="comment">// 套餐</span></span><br><span class="line">        getchengshiRecord: <span class="string">'order/get-area'</span>, <span class="comment">// 套餐</span></span><br><span class="line">        postFormRecord: <span class="string">"order/create-order"</span>, <span class="comment">//表单提交</span></span><br><span class="line">        getinfoRecord: <span class="string">"order/get-order-info"</span>, <span class="comment">//详情</span></span><br><span class="line"></span><br><span class="line">        changeFormRecord: <span class="string">"order/edit-order"</span>, <span class="comment">// 修改订单</span></span><br><span class="line">        getphoneNum: <span class="string">"order/make-phone-call"</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="comment">//get请求</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> getphoneNum = <span class="function">(<span class="params">params</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> axios.get(Header + Method.getphoneNum, &#123; params &#125;)</span><br><span class="line">        .then(<span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> result.data</span><br><span class="line"></span><br><span class="line">        &#125;)</span><br><span class="line">&#125;   </span><br><span class="line"><span class="comment">//post请求</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> changeFormRecord = <span class="function">(<span class="params">params</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> axios.post(Header + Method.changeFormRecord, params)</span><br><span class="line">        .then(<span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> result.data</span><br><span class="line"></span><br><span class="line">        &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
-<p>  <strong>v-for</strong> 把一个数组对应成一组元素<br>  v-for 支持一个可选的第二个参数为当前项的索引。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">       &lt;tr v-<span class="keyword">for</span>=<span class="string">"(list,index) in items"</span>&gt;</span><br><span class="line">           &lt;td&gt;&#123;&#123;index&#125;&#125;&lt;<span class="regexp">/td&gt;</span></span><br><span class="line"><span class="regexp">           &lt;td&gt;&#123;&#123;list.age&#125;&#125;&lt;/</span>td&gt;</span><br><span class="line">           &lt;td&gt;&#123;&#123;list.name&#125;&#125;&lt;<span class="regexp">/td&gt;</span></span><br><span class="line"><span class="regexp">           &lt;td&gt;&#123;&#123;list.sex&#125;&#125;&lt;/</span>td&gt;</span><br><span class="line">       &lt;<span class="regexp">/tr&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>table&gt;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">         <span class="keyword">return</span>&#123;</span><br><span class="line">           items:[</span><br><span class="line">             &#123;<span class="string">"age"</span>:<span class="string">"20"</span>,<span class="string">"name"</span>:<span class="string">"lisi"</span>,<span class="string">"sex"</span>&#125;,</span><br><span class="line">             &#123;<span class="string">"age"</span>:<span class="string">"10"</span>,<span class="string">"name"</span>:<span class="string">"shangsan"</span>,<span class="string">"sex"</span>&#125;,</span><br><span class="line">             &#123;<span class="string">"age"</span>:<span class="string">"30"</span>,<span class="string">"name"</span>:<span class="string">"wanger"</span>,<span class="string">"sex"</span>&#125;,</span><br><span class="line">           ],</span><br><span class="line">         &#125;,</span><br><span class="line">  &lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="数组方法"><a href="#数组方法" class="headerlink" title="数组方法"></a>数组方法</h3><blockquote>
-<p>push() 后面添加<br>  pop() 后面删除<br>  shift() 前面删除<br>  unshift() 前面添加<br>  splice() 向数组添加删除元素<br>  sort() 顺序排序<br>  reverse() 倒序排序</p>
-</blockquote>
-<h3 id="一个对象的-v-for"><a href="#一个对象的-v-for" class="headerlink" title="一个对象的 v-for"></a>一个对象的 v-for</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">  &lt;table&gt;</span><br><span class="line">      &lt;tr v-<span class="keyword">for</span>=<span class="string">"(a,key,index) in b"</span>&gt;</span><br><span class="line">          &lt;td&gt;&#123;&#123;index&#125;&#125;-&#123;&#123;key&#125;&#125;-&#123;&#123;a&#125;&#125;&lt;<span class="regexp">/td&gt;       /</span><span class="regexp">/ 0 - name - liss</span></span><br><span class="line"><span class="regexp">      &lt;/</span>tr&gt;</span><br><span class="line">  &lt;<span class="regexp">/table&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">   return &#123;</span></span><br><span class="line"><span class="regexp">              object:&#123;</span></span><br><span class="line"><span class="regexp">                  name:'liss',</span></span><br><span class="line"><span class="regexp">                  age:'21',</span></span><br><span class="line"><span class="regexp">              &#125;</span></span><br><span class="line"><span class="regexp">          &#125; </span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;  </span><br><span class="line">可以用 v-<span class="keyword">for</span> 通过一个对象的属性来迭代</span><br><span class="line">也可以提供第二个的参数为键名</span><br><span class="line">第三个参数为索引</span><br></pre></td></tr></table></figure>
-<p>  更改对象检测时 filter(), concat() 和 slice()    <strong>总是返回一个新数组</strong><br> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">v-text === &#123;&#123;&#125;&#125; 防止&#123;&#123;&#125;&#125; 出现在页面上</span><br><span class="line">v-once只绑定一次 当数据再次发生变化 也不导致页面刷新</span><br><span class="line">v-html把数据当字符进行渲染</span><br></pre></td></tr></table></figure></p>
-<h3 id="VUE返回上一页"><a href="#VUE返回上一页" class="headerlink" title="VUE返回上一页"></a>VUE返回上一页</h3> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.$router.back()</span><br></pre></td></tr></table></figure>
-<h3 id="VUE过滤"><a href="#VUE过滤" class="headerlink" title="VUE过滤"></a>VUE过滤</h3>  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"> &#123;&#123;scope.row.order_state | pay_filter&#125;&#125;</span><br><span class="line"> filters: &#123;</span><br><span class="line">      pay_filter: <span class="function"><span class="keyword">function</span>(<span class="params">val</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (val == <span class="number">1</span>) &#123;</span><br><span class="line">          <span class="keyword">return</span> <span class="string">"待处理"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (val == <span class="number">2</span>) &#123;</span><br><span class="line">          <span class="keyword">return</span> <span class="string">"已处理"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (val == <span class="number">3</span>) &#123;</span><br><span class="line">          <span class="keyword">return</span> <span class="string">"已完结"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">     </span><br><span class="line">        <span class="keyword">return</span> val;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">@click=<span class="string">"qo(scope.row.id,scope.row.order_state)"</span></span><br><span class="line">传值id和参数</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -491,8 +469,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/06/js基础/" rel="next" title="js基础 复习">
-                <i class="fa fa-chevron-left"></i> js基础 复习
+              <a href="/2018/11/22/session传参/" rel="next" title="session的使用">
+                <i class="fa fa-chevron-left"></i> session的使用
               </a>
             
           </div>
@@ -500,10 +478,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/10/CSS性能优化/" rel="prev" title="CSS性能优化">
-                CSS性能优化 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -718,7 +692,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#结构"><span class="nav-number">1.</span> <span class="nav-text">结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#指令"><span class="nav-number">2.</span> <span class="nav-text">指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数组方法"><span class="nav-number">3.</span> <span class="nav-text">数组方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一个对象的-v-for"><span class="nav-number">4.</span> <span class="nav-text">一个对象的 v-for</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VUE返回上一页"><span class="nav-number">5.</span> <span class="nav-text">VUE返回上一页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VUE过滤"><span class="nav-number">6.</span> <span class="nav-text">VUE过滤</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、安装axios"><span class="nav-number">1.</span> <span class="nav-text">1、安装axios</span></a></li></ol></div>
             
 
           </div>

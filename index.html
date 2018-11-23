@@ -369,7 +369,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2018-08-20 09:41:32" itemprop="dateModified" datetime="2018-08-20T09:41:32+08:00">2018-08-20</time>
+                <time title="Updated at: 2018-09-25 12:35:01" itemprop="dateModified" datetime="2018-09-25T12:35:01+08:00">2018-09-25</time>
               
             
           </span>
@@ -423,7 +423,7 @@
         
           
             <h3 id="查看信息"><a href="#查看信息" class="headerlink" title="查看信息"></a>查看信息</h3><blockquote>
-<p> <font color="#FF0000">  git branch  </font><br>   <strong>查看当前分支</strong><br>   <font color="#FF0000">  git log     </font><br>   <strong>显示当前分支的版本历史查看时间</strong><br>   <font color="#FF0000">  git status  </font><br>   <strong>显示有变更的文件</strong><br>   <font color="#FF0000">  git log -5 - -pretty - -oneline  </font><br>   <strong>列出过去的5次提交</strong><br>   <font color="#FF0000">  git branch -l </font><br>   <strong>列出本地分支</strong><br>   <font color="#FF0000">  git branch -r </font><br>   <strong>列出所有远程分支</strong><br>   <font color="#FF0000">  git branch -a </font><br>   <strong>列出全部分支(本地和远程分支)</strong><br>   <font color="#FF0000">  git remote -v </font><br>   <strong>显示所有远程仓库</strong></p>
+<p> <font color="#FF0000">  git branch  </font><br>   <strong>查看当前分支</strong><br>   <font color="#FF0000">  git log     </font><br>   <strong>显示当前分支的版本历史查看时间</strong><br>   <font color="#FF0000">  git status  </font><br>   <strong>显示有变更的文件</strong><br>   <font color="#FF0000">  git log -5 - -pretty - -oneline  </font><br>   <strong>列出过去的5次提交</strong><br>   <font color="#FF0000">  git branch -l </font><br>   <strong>列出本地分支</strong>e<br>   <font color="#FF0000">  git branch -r </font><br>   <strong>列出所有远程分支</strong><br>   <font color="#FF0000">  git branch -a </font><br>   <strong>列出全部分支(本地和远程分支)</strong><br>   <font color="#FF0000">  git remote -v </font><br>   <strong>显示所有远程仓库</strong></p>
 </blockquote>
 <h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><blockquote>
 <p> <font color="#FF0000">  git branch  name  </font><br>   <strong>新建一个本地分支但停留在当前分支</strong><br>  <font color="#FF0000">  git checkout -b name  </font><br>   <strong>新建一个本地分支并切换到当前分支</strong><br>  <font color="#FF0000">  git checkout -d name  </font><br>   <strong>删除当前本地分支</strong><br>  <font color="#FF0000">  git pull [ remote ] [ branch ]  </font><br>   <strong>上传本地分支到远程仓库</strong><br>  <font color="#FF0000">  git pull [ remote ] –force  </font><br>  <strong>强行推送当前分支到远程仓库，即使有冲突</strong><br>  <font color="#FF0000">  git pull [ remote ] –all  </font><br>  <strong>推送所有的分支到远程仓库</strong></p>
@@ -638,6 +638,336 @@
 <p>可以看到将前置递减改成后置递减发生了变化,之前num3和num4都是等于21的现在num3等于22,这里是因为在计算num3的时候使用的是num1的原始值进行计算的;而num4之所以等于21是因为在计算后num3减1赋值给了num1所以num4等于21</p>
 </blockquote>
 <h3 id="如果是字符串先转换成数字值-在执行加减-字符串变量变成数值变量"><a href="#如果是字符串先转换成数字值-在执行加减-字符串变量变成数值变量" class="headerlink" title="如果是字符串先转换成数字值 在执行加减 字符串变量变成数值变量"></a>如果是字符串先转换成数字值 在执行加减 字符串变量变成数值变量</h3><h3 id="在布尔值计算的时候-布尔值是false的时候-先转换为0在执行加减1的操作-布尔值的变量变成数值的变量"><a href="#在布尔值计算的时候-布尔值是false的时候-先转换为0在执行加减1的操作-布尔值的变量变成数值的变量" class="headerlink" title="在布尔值计算的时候 布尔值是false的时候 先转换为0在执行加减1的操作 布尔值的变量变成数值的变量"></a>在布尔值计算的时候 布尔值是false的时候 先转换为0在执行加减1的操作 布尔值的变量变成数值的变量</h3><h3 id="布尔值是-true的时候-先转换成1在执行加减法的操作-布尔值变成数值的变量"><a href="#布尔值是-true的时候-先转换成1在执行加减法的操作-布尔值变成数值的变量" class="headerlink" title="布尔值是 true的时候 先转换成1在执行加减法的操作 布尔值变成数值的变量"></a>布尔值是 true的时候 先转换成1在执行加减法的操作 布尔值变成数值的变量</h3><h3 id="在浮点数的时候-执行加减1的操作"><a href="#在浮点数的时候-执行加减1的操作" class="headerlink" title="在浮点数的时候 执行加减1的操作"></a>在浮点数的时候 执行加减1的操作</h3><h3 id="同于对象的时，先调用对象的valueOf-方法取得一个可操作的值-如果结果是NaN则调用toSring-方法-对象变量变成数值变量"><a href="#同于对象的时，先调用对象的valueOf-方法取得一个可操作的值-如果结果是NaN则调用toSring-方法-对象变量变成数值变量" class="headerlink" title="同于对象的时，先调用对象的valueOf()方法取得一个可操作的值 如果结果是NaN则调用toSring()方法 对象变量变成数值变量"></a>同于对象的时，先调用对象的valueOf()方法取得一个可操作的值 如果结果是NaN则调用toSring()方法 对象变量变成数值变量</h3>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/22/axios/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="朱国庆">
+      <meta itemprop="description" content="不要只因一次挫败，就忘记你原来决心想达到的目的.">
+      <meta itemprop="image" content="/images/001.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="web">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/22/axios/" itemprop="url">
+                  axios的封装
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2018-11-22 18:04:33 / Updated at: 18:20:35" itemprop="dateCreated datePublished" datetime="2018-11-22T18:04:33+08:00">2018-11-22</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/关于前端/" itemprop="url" rel="index"><span itemprop="name">关于前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1、安装axios"><a href="#1、安装axios" class="headerlink" title="1、安装axios"></a>1、安装axios</h2><blockquote>
+<p>先安装<br>npm install axios<br>然后！<br>npm install –save axios vue-axios<br>配置模板！<br>新建api文件–&gt;建一个api.js文件<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> _axios <span class="keyword">from</span> <span class="string">'axios'</span> </span><br><span class="line"><span class="keyword">import</span> qs <span class="keyword">from</span> <span class="string">'qs'</span></span><br><span class="line"><span class="comment">// 新建一个请求头</span></span><br><span class="line"><span class="keyword">const</span> Header = <span class="string">"http://guanjia.uzhuang.com/index.php?r="</span>;</span><br><span class="line"><span class="comment">//获取token</span></span><br><span class="line"><span class="keyword">const</span> axios = _axios.create(&#123;</span><br><span class="line">    headers: &#123;</span><br><span class="line">        <span class="string">'Content-Type'</span>: <span class="string">'application/x-www-form-urlencoded'</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    transformRequest: <span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123;</span><br><span class="line">        <span class="comment">//依自己的需求对请求数据进行处理</span></span><br><span class="line">        <span class="keyword">if</span> (data) &#123;</span><br><span class="line">            data = qs.stringify(data);</span><br><span class="line">            <span class="keyword">return</span> data;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> data;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">axios.interceptors.request.use(<span class="function"><span class="keyword">function</span>(<span class="params">config</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 获取当前是否存在token</span></span><br><span class="line">    <span class="comment">// config.withCredentials = true // 允许携带token ,这个是解决跨域产生的相关问题</span></span><br><span class="line">    <span class="keyword">let</span> token = getCookie(<span class="string">'bId_token_key'</span>)</span><br><span class="line">    <span class="keyword">if</span> (token) &#123;</span><br><span class="line">        <span class="comment">// Authorization 请求头的键是前后台约定</span></span><br><span class="line">        config.headers[<span class="string">'tokenkey'</span>] = token</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> config</span><br><span class="line">&#125;, <span class="function"><span class="keyword">function</span>(<span class="params">error</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">Promise</span>.reject(error)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//写后台路径</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Method = &#123;</span><br><span class="line">        getOneRecord: <span class="string">'order/get-order-list'</span>, <span class="comment">// 全部订单</span></span><br><span class="line">        getTaocanRecord: <span class="string">'order/get-package'</span>, <span class="comment">// 套餐</span></span><br><span class="line">        getchengshiRecord: <span class="string">'order/get-area'</span>, <span class="comment">// 套餐</span></span><br><span class="line">        postFormRecord: <span class="string">"order/create-order"</span>, <span class="comment">//表单提交</span></span><br><span class="line">        getinfoRecord: <span class="string">"order/get-order-info"</span>, <span class="comment">//详情</span></span><br><span class="line"></span><br><span class="line">        changeFormRecord: <span class="string">"order/edit-order"</span>, <span class="comment">// 修改订单</span></span><br><span class="line">        getphoneNum: <span class="string">"order/make-phone-call"</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="comment">//get请求</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> getphoneNum = <span class="function">(<span class="params">params</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> axios.get(Header + Method.getphoneNum, &#123; params &#125;)</span><br><span class="line">        .then(<span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> result.data</span><br><span class="line"></span><br><span class="line">        &#125;)</span><br><span class="line">&#125;   </span><br><span class="line"><span class="comment">//post请求</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> changeFormRecord = <span class="function">(<span class="params">params</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> axios.post(Header + Method.changeFormRecord, params)</span><br><span class="line">        .then(<span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> result.data</span><br><span class="line"></span><br><span class="line">        &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/22/session传参/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="朱国庆">
+      <meta itemprop="description" content="不要只因一次挫败，就忘记你原来决心想达到的目的.">
+      <meta itemprop="image" content="/images/001.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="web">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/22/session传参/" itemprop="url">
+                  session的使用
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2018-11-22 17:32:14" itemprop="dateCreated datePublished" datetime="2018-11-22T17:32:14+08:00">2018-11-22</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-11-23 14:38:15" itemprop="dateModified" datetime="2018-11-23T14:38:15+08:00">2018-11-23</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/关于前端/" itemprop="url" rel="index"><span itemprop="name">关于前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1、session传值"><a href="#1、session传值" class="headerlink" title="1、session传值"></a>1、session传值</h2> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sessionStorage.setItem(<span class="string">"name"</span>,value);</span><br><span class="line">前面是传的名字,后面跟的是值</span><br></pre></td></tr></table></figure>
+<h2 id="2、session取值"><a href="#2、session取值" class="headerlink" title="2、session取值"></a>2、session取值</h2> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.type=sessionStorage.getItem(<span class="string">"name"</span>)</span><br><span class="line">声明一个变量存储获获取到的session值</span><br></pre></td></tr></table></figure>
+<h2 id="3、session的生命周期"><a href="#3、session的生命周期" class="headerlink" title="3、session的生命周期"></a>3、session的生命周期</h2><p><strong>创建:</strong> 当客户端第一次访问某个jsp或者Servlet时候，服务器会为当前会话创建一个 <strong>SessionId</strong> ,每次客户端向服务端发送请求时，都会将此 <strong>SessionId</strong> 携带过去，服务端会对此 <strong>SessionId</strong> 进行校验。<br><strong>活动:</strong><br><strong>销毁:</strong><br>Session的销毁只有三种方式：<br>1、调用了session.invalidate()方法<br>2、Session过期（超时）<br>3、服务器重新启动</p>
+
           
         
       
@@ -911,7 +1241,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Updated at: 2018-08-20 19:04:21" itemprop="dateModified" datetime="2018-08-20T19:04:21+08:00">2018-08-20</time>
+                <time title="Updated at: 2018-11-22 18:03:20" itemprop="dateModified" datetime="2018-11-22T18:03:20+08:00">2018-11-22</time>
               
             
           </span>
@@ -975,6 +1305,8 @@
 </blockquote>
 <h3 id="一个对象的-v-for"><a href="#一个对象的-v-for" class="headerlink" title="一个对象的 v-for"></a>一个对象的 v-for</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">  &lt;table&gt;</span><br><span class="line">      &lt;tr v-<span class="keyword">for</span>=<span class="string">"(a,key,index) in b"</span>&gt;</span><br><span class="line">          &lt;td&gt;&#123;&#123;index&#125;&#125;-&#123;&#123;key&#125;&#125;-&#123;&#123;a&#125;&#125;&lt;<span class="regexp">/td&gt;       /</span><span class="regexp">/ 0 - name - liss</span></span><br><span class="line"><span class="regexp">      &lt;/</span>tr&gt;</span><br><span class="line">  &lt;<span class="regexp">/table&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">   return &#123;</span></span><br><span class="line"><span class="regexp">              object:&#123;</span></span><br><span class="line"><span class="regexp">                  name:'liss',</span></span><br><span class="line"><span class="regexp">                  age:'21',</span></span><br><span class="line"><span class="regexp">              &#125;</span></span><br><span class="line"><span class="regexp">          &#125; </span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;  </span><br><span class="line">可以用 v-<span class="keyword">for</span> 通过一个对象的属性来迭代</span><br><span class="line">也可以提供第二个的参数为键名</span><br><span class="line">第三个参数为索引</span><br></pre></td></tr></table></figure>
 <p>  更改对象检测时 filter(), concat() 和 slice()    <strong>总是返回一个新数组</strong><br> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">v-text === &#123;&#123;&#125;&#125; 防止&#123;&#123;&#125;&#125; 出现在页面上</span><br><span class="line">v-once只绑定一次 当数据再次发生变化 也不导致页面刷新</span><br><span class="line">v-html把数据当字符进行渲染</span><br></pre></td></tr></table></figure></p>
+<h3 id="VUE返回上一页"><a href="#VUE返回上一页" class="headerlink" title="VUE返回上一页"></a>VUE返回上一页</h3> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.$router.back()</span><br></pre></td></tr></table></figure>
+<h3 id="VUE过滤"><a href="#VUE过滤" class="headerlink" title="VUE过滤"></a>VUE过滤</h3>  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"> &#123;&#123;scope.row.order_state | pay_filter&#125;&#125;</span><br><span class="line"> filters: &#123;</span><br><span class="line">      pay_filter: <span class="function"><span class="keyword">function</span>(<span class="params">val</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (val == <span class="number">1</span>) &#123;</span><br><span class="line">          <span class="keyword">return</span> <span class="string">"待处理"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (val == <span class="number">2</span>) &#123;</span><br><span class="line">          <span class="keyword">return</span> <span class="string">"已处理"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (val == <span class="number">3</span>) &#123;</span><br><span class="line">          <span class="keyword">return</span> <span class="string">"已完结"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">     </span><br><span class="line">        <span class="keyword">return</span> val;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">@click=<span class="string">"qo(scope.row.id,scope.row.order_state)"</span></span><br><span class="line">传值id和参数</span><br></pre></td></tr></table></figure>
 
           
         
@@ -1397,7 +1729,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
@@ -1439,7 +1771,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">Tags</span>
                   </a>
                 </div>
