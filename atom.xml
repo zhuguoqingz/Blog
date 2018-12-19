@@ -47,7 +47,7 @@
     <link href="http://yoursite.com/2018/11/22/session%E4%BC%A0%E5%8F%82/"/>
     <id>http://yoursite.com/2018/11/22/session传参/</id>
     <published>2018-11-22T09:32:14.000Z</published>
-    <updated>2018-11-23T06:38:15.594Z</updated>
+    <updated>2018-12-19T06:34:55.978Z</updated>
     
     <content type="html"><![CDATA[<h2 id="1、session传值"><a href="#1、session传值" class="headerlink" title="1、session传值"></a>1、session传值</h2> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sessionStorage.setItem(<span class="string">"name"</span>,value);</span><br><span class="line">前面是传的名字,后面跟的是值</span><br></pre></td></tr></table></figure><h2 id="2、session取值"><a href="#2、session取值" class="headerlink" title="2、session取值"></a>2、session取值</h2> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.type=sessionStorage.getItem(<span class="string">"name"</span>)</span><br><span class="line">声明一个变量存储获获取到的session值</span><br></pre></td></tr></table></figure><h2 id="3、session的生命周期"><a href="#3、session的生命周期" class="headerlink" title="3、session的生命周期"></a>3、session的生命周期</h2><p><strong>创建:</strong> 当客户端第一次访问某个jsp或者Servlet时候，服务器会为当前会话创建一个 <strong>SessionId</strong> ,每次客户端向服务端发送请求时，都会将此 <strong>SessionId</strong> 携带过去，服务端会对此 <strong>SessionId</strong> 进行校验。<br><strong>活动:</strong><br><strong>销毁:</strong><br>Session的销毁只有三种方式：<br>1、调用了session.invalidate()方法<br>2、Session过期（超时）<br>3、服务器重新启动</p>]]></content>
     
